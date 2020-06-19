@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/virtual_triage"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/finish_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="@string/if_any_select_symptoms"
+                android:textColor="#000000"
+
+                android:textSize="18sp" />
+
+            <TableLayout
+                android:id="@+id/tableLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/fever_above_100_4_str"
+                        android:textColor="#303030"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+
+                    <Space
+                        android:layout_width="130sp"
+                        android:layout_height="wrap_content" />
+
+                    <CheckBox
+                        android:id="@+id/fever_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shortness_of_breath_str"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#303030"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+
+                    <Space
+                        android:layout_width="130sp"
+                        android:layout_height="wrap_content" />
+
+                    <CheckBox
+                        android:id="@+id/shortness_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chest_pain_or_pressure_str"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#303030"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+
+                    <Space
+                        android:layout_width="130sp"
+                        android:layout_height="wrap_content" />
+
+                    <CheckBox
+                        android:id="@+id/chest_pain_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/blue_lips_str"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#303030"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+
+                    <Space
+                        android:layout_width="130sp"
+                        android:layout_height="wrap_content" />
+
+                    <CheckBox
+                        android:id="@+id/blue_lips_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/difficulty_breathing_str"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#303030"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+
+                    <Space
+                        android:layout_width="130sp"
+                        android:layout_height="wrap_content" />
+
+                    <CheckBox
+                        android:id="@+id/breathing_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/confusion_str"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#303030"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+
+                    <Space
+                        android:layout_width="130sp"
+                        android:layout_height="wrap_content" />
+
+                    <CheckBox
+                        android:id="@+id/confusion_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="@string/please_answer_according_to_your_recent_history"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:shrinkColumns="*"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.6">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/infected_contact_str"
+                        android:textColor="#303030"
+                        android:fontFamily="sans-serif-medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+
+                    <ToggleButton
+                        android:id="@+id/person_infected_toggle"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:textOff="@string/no"
+                        android:textOn="@string/yes" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/risk_country_contact_str"
+                        android:textColor="#303030"
+                        android:fontFamily="sans-serif-medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+
+                    <ToggleButton
+                        android:id="@+id/country_infected_toggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textOff="@string/no"
+                        android:textOn="@string/yes" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/finish_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:text="@string/finish_btn_str"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".table_content">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme"
+        tools:ignore="MissingConstraints" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="100dp"
+        android:stretchColumns="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ExtraText">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="start"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/temperature"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#303030"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="52dp" />
+
+            <EditText
+                android:id="@+id/text_temperature"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                tools:layout_editor_absoluteX="45dp"
+                tools:layout_editor_absoluteY="582dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview_cough"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/cough"
+                android:textSize="18sp"
+                android:textColor="#303030"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="52dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_cough"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                tools:layout_editor_absoluteX="39dp"
+                tools:layout_editor_absoluteY="100dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview_fatigue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/fatigue"
+                android:textSize="18sp"
+                android:textColor="#303030"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="52dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_fatigue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                tools:layout_editor_absoluteX="39dp"
+                tools:layout_editor_absoluteY="100dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview_chest_pain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/chest_pain"
+                android:textSize="18sp"
+                android:textColor="#303030"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="52dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_chest_pain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                tools:layout_editor_absoluteX="39dp"
+                tools:layout_editor_absoluteY="100dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview_breath_difficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/breath_difficulty"
+                android:textSize="18sp"
+                android:textColor="#303030"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="52dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_breath_difficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                tools:layout_editor_absoluteX="39dp"
+                tools:layout_editor_absoluteY="100dp" />
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/textview_less_grave_symptoms"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/less_common_symptoms"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="52dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview_sore_throat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/sore_throat"
+                android:textSize="18sp"
+                android:textColor="#303030"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="52dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_sore_throat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                tools:layout_editor_absoluteX="39dp"
+                tools:layout_editor_absoluteY="100dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview_headache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/headache"
+                android:textSize="18sp"
+                android:textColor="#303030"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="52dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_headache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                tools:layout_editor_absoluteX="39dp"
+                tools:layout_editor_absoluteY="100dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview_smell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/loss_of_taste_smell"
+                android:textSize="18sp"
+                android:textColor="#303030"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="52dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_taste"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                tools:layout_editor_absoluteX="39dp"
+                tools:layout_editor_absoluteY="100dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview_vomit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Nausea/Diarrhea/Vomit?                         "
+                android:textSize="18sp"
+                android:textColor="#303030"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="52dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_vomit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                tools:layout_editor_absoluteX="39dp"
+                tools:layout_editor_absoluteY="100dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview_muscle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/muscle_pain_weakness"
+                android:textSize="18sp"
+                android:textColor="#303030"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="52dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_muscle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                tools:layout_editor_absoluteX="39dp"
+                tools:layout_editor_absoluteY="100dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview_confusion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/confusion_dizziness"
+                android:textSize="18sp"
+                android:textColor="#303030"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="52dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_confusion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                tools:layout_editor_absoluteX="39dp"
+                tools:layout_editor_absoluteY="100dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview_lesion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/rash_hives_skin_lesions"
+                android:textSize="18sp"
+                android:textColor="#303030"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="52dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_lesion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                tools:layout_editor_absoluteX="39dp"
+                tools:layout_editor_absoluteY="100dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button_confirm_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/salvar"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <ToggleButton
+        android:id="@+id/togglebutton_AM_PM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="@string/togglebutton"
+        android:textOff="@string/am"
+        android:textOn="@string/pm"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <TextView
+        android:id="@+id/textView_day"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/day"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

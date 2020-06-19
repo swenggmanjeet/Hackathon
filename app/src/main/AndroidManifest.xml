@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.table">
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Background">
+        <activity android:name=".welcome_screen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".table_content"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".table_result"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".profile_creator"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".triage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".you_fine_scr"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".be_aware_1_scr"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".be_aware_2_scr"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".call_doc_scr"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".faq_init"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

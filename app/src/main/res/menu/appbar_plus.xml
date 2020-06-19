@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/plus_btn"
+        android:title="@string/open_menu"
+        android:icon="@drawable/ic_plus"
+        app:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/delete_SaveFile_btn"
+        android:title="@string/DeleteYourSave"
+        android:icon="@drawable/ic_delete"
+        app:showAsAction="ifRoom">
+    </item>
+
+</menu>
